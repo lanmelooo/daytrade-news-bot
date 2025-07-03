@@ -1,11 +1,12 @@
 import requests
 import feedparser
 import sqlite3
+import os
 from keep_alive import keep_alive
 
 # Telegram Configuração
-TELEGRAM_TOKEN = "SEU_TOKEN_AQUI"
-CHAT_ID = "SEU_CHAT_ID_AQUI"
+TELEGRAM_TOKEN = os.environ['TELEGRAM_TOKEN']
+CHAT_ID = os.environ['CHAT_ID']
 
 # Feeds RSS
 RSS_FEEDS = [
